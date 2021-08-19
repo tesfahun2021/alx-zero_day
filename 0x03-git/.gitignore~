@@ -1,0 +1,17 @@
+In the .gitignore file *~ rule is set probably to ensure that temporary backup files created by emacs or spacemacs are ignored.
+
+However no rule is given to ensure that the temporary backup files created by vim are also ignored.
+
+As a result, git status -u gets polluted by files such as src/.benchmark.cc.swp.
+
+One option would be to ask the user to configure vim in such a way that the .swp files aren't created.
+
+A better option would be to restrict them in .gitignore.In the .gitignore file *~ rule is set probably to ensure that temporary backup files created by emacs or spacemacs are ignored.
+
+However no rule is given to ensure that the temporary backup files created by vim are also ignored.
+
+As a result, git status -u gets polluted by files such as src/.benchmark.cc.swp.
+
+One option would be to ask the user to configure vim in such a way that the .swp files aren't created.
+
+A better option would be to restrict them in .gitignore.
